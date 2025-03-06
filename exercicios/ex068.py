@@ -9,6 +9,8 @@ print("=-" * 20)
 while True:
   numero = int(input("Digite um valor: "))
   pori = str(input("Par ou Impar?[P/I] ")).upper().strip()[0]
+  while pori not in "PI":
+    pori = str(input("Par ou Impar?[P/I] ")).upper().strip()[0]
   print("-" * 40)
 
   computador = randint(0,9)
